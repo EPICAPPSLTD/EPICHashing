@@ -1,6 +1,6 @@
 //
 //  View.swift
-//  TES 2
+//  EPICHashing
 //
 //  Created by Danny Bravo on 18/04/2015.
 //  Copyright (c) 2015 EPIC. All rights reserved.
@@ -10,11 +10,5 @@
 import UIKit
 
 class View : UIView {
-    
-    //MARK: - lifecycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
     
 }
