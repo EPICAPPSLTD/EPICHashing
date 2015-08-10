@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6CAACF72-75CC-4A0B-9923-9A4FEF4C01F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EPICHashing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>52D4F5C50C248F88040D88DFFEB44624DB5BA23E</key>
+		<string>https://github.com/EPICAPPSLTD/EPICHashing.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EPICHashing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>52D4F5C50C248F88040D88DFFEB44624DB5BA23E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/EPICAPPSLTD/EPICHashing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>52D4F5C50C248F88040D88DFFEB44624DB5BA23E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>52D4F5C50C248F88040D88DFFEB44624DB5BA23E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EPICHashing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
