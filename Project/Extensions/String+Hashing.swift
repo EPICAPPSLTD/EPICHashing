@@ -17,7 +17,7 @@ extension String  {
     - parameter algorithm: The algorithm to use for hashing a string as specified by the HashAlgorithm enum.
     - returns: A string value or nil depending on wether self can be converted to a valid NSData object. 
     */
-    func hashUsingAlgorithm(algorithm: HashAlgorithm) -> String? {
+    func hashUsingAlgorithm(algorithm: EPICHashAlgorithm) -> String? {
         if let data = self.dataUsingEncoding(NSUTF8StringEncoding) {
             return data.hashUsingAlgorithm(algorithm)
         }

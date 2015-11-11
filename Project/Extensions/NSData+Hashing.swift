@@ -11,7 +11,7 @@ import Foundation
 
 //MARK: - enumeration
 /// A list of currently supported hash algorithms for string objects.
-enum HashAlgorithm {
+enum EPICHashAlgorithm {
     case MD2
     case MD4
     case MD5
@@ -74,7 +74,7 @@ extension NSData {
     - parameter algorithm: The algorithm to use for hashing the data as specified by the HashAlgorithm enum.
     - returns: A hashed string representation of the data.
     */
-    func hashUsingAlgorithm(algorithm: HashAlgorithm) -> String {
+    func hashUsingAlgorithm(algorithm: EPICHashAlgorithm) -> String {
         let hashLength = algorithm.digestLength()
         var digest = [UInt8](count:hashLength, repeatedValue: 0)
         algorithm.hashData(self, digest: &digest)

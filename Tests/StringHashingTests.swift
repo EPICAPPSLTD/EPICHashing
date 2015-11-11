@@ -18,61 +18,61 @@ class StringHashingTests: XCTestCase {
     func testHashes() {
         
         //MD2
-        var hash = string1.hashUsingAlgorithm(HashAlgorithm.MD2)
+        var hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.MD2)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 32)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.MD2)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.MD2)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.MD2)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.MD2)!)
         
         //MD4
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.MD4)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.MD4)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 32)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.MD4)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.MD4)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.MD4)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.MD4)!)
         
         //MD5
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.MD5)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.MD5)
         XCTAssertNotNil(hash)
         hash?.dataUsingEncoding(NSUTF8StringEncoding)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 32)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.MD5)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.MD5)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.MD5)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.MD5)!)
         
         //SHA1
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.SHA1)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.SHA1)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 40)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.SHA1)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.SHA1)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.SHA1)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.SHA1)!)
         
         //SHA224
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.SHA224)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.SHA224)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 56)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.SHA224)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.SHA224)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.SHA224)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.SHA224)!)
         
         //SHA256
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.SHA256)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.SHA256)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 64)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.SHA256)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.SHA256)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.SHA256)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.SHA256)!)
         
         //SHA384
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.SHA384)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.SHA384)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 96)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.SHA384)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.SHA384)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.SHA384)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.SHA384)!)
         
         //SHA512
-        hash = string1.hashUsingAlgorithm(HashAlgorithm.SHA512)
+        hash = string1.hashUsingAlgorithm(EPICHashAlgorithm.SHA512)
         XCTAssertNotNil(hash)
         XCTAssertEqual(hash!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding), 128)
-        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(HashAlgorithm.SHA512)!)
-        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(HashAlgorithm.SHA512)!)
+        XCTAssertEqual(hash!, string2.hashUsingAlgorithm(EPICHashAlgorithm.SHA512)!)
+        XCTAssertNotEqual(hash!, string3.hashUsingAlgorithm(EPICHashAlgorithm.SHA512)!)
         
     }
 
